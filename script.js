@@ -1,14 +1,18 @@
-// Function to reveal sections on scroll
-function revealOnScroll() {
-    const sections = document.querySelectorAll('.content');
-    sections.forEach(section => {
-        const sectionPosition = section.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.3;
-        if (sectionPosition < screenPosition) {
-            section.classList.add('visible');
+window.addEventListener('scroll', function() {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    const slideInElements = document.querySelectorAll('.slide-in');
+
+    fadeInElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+            el.classList.add('fade-in-visible');
         }
     });
-}
 
-window.addEventListener('scroll', revealOnScroll);
-document.addEventListener('DOMContentLoaded', revealOnScroll);
+    slideInElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+            el.classList.add('slide-in-visible');
+        }
+    });
+});
