@@ -1,0 +1,197 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0071e3;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #005bb5;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0071e3;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0071e3;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+    transform: translateY(-5px);
+}
+
+/* Profile Picture Styling */
+.profile-pic, .profile-pic-about, .profile-pic-cv {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover, .profile-pic-about:hover, .profile-pic-cv:hover {
+    transform: scale(1.05);
+}
+
+/* Content Sections */
+section.content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #0071e3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* School Logos */
+.school {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.school-logo {
+    max-width: 140px;
+    transition: transform 0.3s;
+}
+
+.school-logo:hover {
+    transform: scale(1.1);
+}
+
+/* CV List */
+.cv-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cv-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e5;
+    font-size: 18px;
+}
+
+.cv-list li:last-child {
+    border-bottom: none;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #e0e0e5;
+}
+
+/* Form Styling (Contact Page) */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f5f5f7;
+    color: #333;
+}
+
+input:focus, textarea:focus {
+    border-color: #0071e3;
+    outline: none;
+}
+
+button {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
